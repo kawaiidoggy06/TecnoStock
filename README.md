@@ -5,7 +5,7 @@ Desarrollada con **HTML5 + Bootstrap 5, JavaScript, PHP 8 (PDO) y MySQL**, sin f
 
 > *Asignatura:* Sistemas de Información - Caso TecnoStock
 > *Estudiante:* Tomas Alvarez, Martin Riega
-> *Video explicativo:* _xxxxxx_
+> *Video explicativo:* _https://youtu.be/rjXV6K7FnBE_
 
 ---
 
