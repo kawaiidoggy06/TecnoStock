@@ -1,0 +1,211 @@
+/* =========================================================
+   estilo.css - TecnoStock
+   Estilos propios encima de Bootstrap.
+   (lo hice yo, no soy disenador xd)
+   ========================================================= */
+
+/* ---------- General ---------- */
+body {
+    font-family: Verdana, Tahoma, Arial, sans-serif !important;
+    font-size: 13px;
+    background-color: #d4d0c8 !important;   /* gris tipo ventana de windows */
+    color: #000;
+}
+
+main.container,
+.login-caja {
+    background-color: #ffffff;
+    border: 2px solid #808080;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000080;                          /* azul marino */
+}
+
+h1, .h3 {
+    border-bottom: 2px solid #000080;
+    padding-bottom: 4px;
+}
+
+a {
+    color: #0000ee;
+    text-decoration: underline;
+}
+a:visited { color: #551a8b; }
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    color: #000;
+    background-color: #ffff99;
+    padding: 0 2px;
+    border: 1px dotted #999;
+}
+
+hr { border-top: 1px solid #000; opacity: 1; }
+
+/* Nada de sombras ni bordes redondeados */
+.shadow-sm, .shadow { box-shadow: none !important; }
+.card, .btn, .form-control, .form-select, .alert, .badge,
+.input-group-text, .breadcrumb, .table-responsive, .btn-group > .btn {
+    border-radius: 0 !important;
+}
+
+/* ---------- Barra de navegacion ---------- */
+.navbar {
+    background: #000080 !important;          /* azul marino plano */
+    border-bottom: 3px solid #ffcc00;        /* linea amarilla */
+    padding-top: 2px;
+    padding-bottom: 2px;
+    margin-bottom: 0 !important;
+}
+.navbar-brand {
+    font-family: "Courier New", monospace;
+    font-size: 20px !important;
+    color: #ffcc00 !important;
+    letter-spacing: 2px;
+}
+.navbar .nav-link {
+    color: #ffffff !important;
+    text-decoration: underline;
+    padding: 4px 8px !important;
+}
+.navbar .nav-link:hover { background-color: #0000cc; }
+.navbar .nav-link.active {
+    background-color: #ffcc00;
+    color: #000 !important;
+    font-weight: bold;
+}
+.navbar-text { color: #ffffff !important; font-style: italic; }
+
+/* ---------- Tarjetas ---------- */
+.card {
+    border: 1px solid #808080 !important;
+    background-color: #f0f0f0;
+}
+.card-body { padding: 10px; }
+.border-danger { border: 2px solid #ff0000 !important; }
+.display-6 {
+    font-family: "Courier New", monospace;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* ---------- Botones ---------- */
+.btn {
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    border: 2px outset #c0c0c0 !important;
+    background-color: #e0e0e0;
+    color: #000 !important;
+    padding: 3px 10px;
+}
+.btn:active { border-style: inset !important; }
+.btn-primary,  .btn-outline-primary   { background-color: #99ccff !important; }
+.btn-success,  .btn-outline-success   { background-color: #99ff99 !important; }
+.btn-danger,   .btn-outline-danger    { background-color: #ff9999 !important; }
+.btn-outline-secondary                { background-color: #e0e0e0 !important; }
+.btn-outline-light {
+    background-color: #c0c0c0 !important;
+    color: #000 !important;
+}
+.btn:hover { filter: brightness(90%); }
+
+/* Botones de entrada/salida en movimientos */
+.btn-check:checked + .btn-outline-success {
+    background-color: #00cc00 !important;
+    color: #fff !important;
+    border-style: inset !important;
+    font-weight: bold;
+}
+.btn-check:checked + .btn-outline-danger {
+    background-color: #ff0000 !important;
+    color: #fff !important;
+    border-style: inset !important;
+    font-weight: bold;
+}
+
+/* ---------- Formularios ---------- */
+.form-control, .form-select {
+    font-family: "Courier New", monospace;
+    font-size: 13px;
+    border: 2px inset #c0c0c0 !important;
+    background-color: #ffffff;
+    padding: 2px 5px;
+}
+.form-control:focus, .form-select:focus {
+    box-shadow: none !important;
+    background-color: #ffffcc;               /* amarillito al escribir */
+}
+.form-control[readonly] { background-color: #dddddd; }
+.form-label { font-weight: bold; margin-bottom: 2px; }
+.form-text { font-style: italic; color: #555 !important; }
+.invalid-feedback { font-weight: bold; color: #ff0000 !important; }
+
+/* ---------- Tablas ---------- */
+.table {
+    border: 1px solid #000;
+    font-size: 12px;
+}
+.table th, .table td {
+    border: 1px solid #999 !important;
+    padding: 3px 6px !important;
+}
+.table thead th,
+.table-light th {
+    background-color: #c0c0c0 !important;
+    color: #000;
+    text-transform: uppercase;
+    font-size: 11px;
+}
+.table tbody tr:nth-child(even) td { background-color: #f5f5f5; }
+.table-danger td,
+.table tbody tr.table-danger:nth-child(even) td { background-color: #ffcccc !important; }
+.table-hover tbody tr:hover td { background-color: #ffffcc !important; }
+
+/* ---------- Alertas y etiquetas ---------- */
+.alert {
+    border: 2px solid #000 !important;
+    font-weight: bold;
+    padding: 8px 12px;
+}
+.alert-success { background-color: #ccffcc; color: #006600; }
+.alert-danger  { background-color: #ffcccc; color: #cc0000; }
+.alert-warning { background-color: #ffff99; color: #806600; }
+.alert-info    { background-color: #ccffff; color: #006666; }
+.alert ul      { font-weight: normal; }
+
+.badge {
+    font-family: "Courier New", monospace;
+    font-size: 11px;
+    border: 1px solid #000;
+}
+.bg-success   { background-color: #00aa00 !important; }
+.bg-danger    { background-color: #ff0000 !important; }
+.bg-secondary { background-color: #808080 !important; }
+
+.breadcrumb {
+    background-color: #eeeeee;
+    border: 1px dashed #999;
+    padding: 4px 8px;
+    font-size: 12px;
+}
+
+/* ---------- Pie de pagina ---------- */
+.pie {
+    text-align: center;
+    font-size: 11px;
+    color: #333;
+    margin: 15px 0;
+}
+
+/* ---------- Login ---------- */
+.login-titulo {
+    font-family: "Courier New", monospace;
+    color: #000080;
+    text-align: center;
+    border-bottom: 2px solid #000080;
+}

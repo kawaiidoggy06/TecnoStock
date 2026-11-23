@@ -5,7 +5,7 @@ Desarrollada con **HTML5 + Bootstrap 5, JavaScript, PHP 8 (PDO) y MySQL**, sin f
 
 > *Asignatura:* Sistemas de Información - Caso TecnoStock
 > *Estudiante:* Tomas Alvarez, Martin Riega
-> *Video explicativo:* _[link al video]_
+> *Video explicativo:* _xxxxxx_
 
 ---
 
@@ -147,8 +147,9 @@ tecnostock/
 │   ├── auth.php         Protección de páginas privadas y funciones de ayuda
 │   ├── header.php       Encabezado, menú y mensajes
 │   └── footer.php       Cierre de página y scripts
-├── assets/js/
-│   └── validaciones.js  Validaciones del cliente y confirmaciones
+├── assets/
+│   ├── css/estilo.css   Estilos propios sobre Bootstrap
+│   └── js/validaciones.js  Validaciones del cliente y confirmaciones
 └── database/
     └── tecnostock.sql   Script de creación y datos de prueba
 ```

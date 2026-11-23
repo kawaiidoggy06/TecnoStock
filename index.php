@@ -50,16 +50,17 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Iniciar sesión | TecnoStock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/estilo.css" rel="stylesheet"> <!-- estilos propios -->
 </head>
-<body class="bg-light d-flex align-items-center min-vh-100">
+<body>
 
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-11 col-sm-8 col-md-5 col-lg-4">
-            <div class="card shadow-sm">
-                <div class="card-body p-4">
-                    <h1 class="h3 text-center text-primary fw-bold mb-1">TecnoStock</h1>
-                    <p class="text-center text-muted mb-4">Sistema de inventario</p>
+            <div class="login-caja mt-5">
+                <div>
+                    <h1 class="login-titulo">TecnoStock v1.0</h1>
+                    <p class="text-center mb-3">Sistema de Inventario - Iniciar sesión</p>
 
                     <?php if ($error): ?>
                         <div class="alert alert-danger"><?= htmlspecialchars($error) ?></div>
@@ -81,6 +82,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                     </form>
                 </div>
             </div>
+            <p class="pie">TecnoStock v1.0 - Sistema de Inventario</p>
         </div>
     </div>
 </div>

@@ -12,12 +12,13 @@ $pagina = basename($_SERVER['PHP_SELF']); // para marcar el menú activo
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= e($titulo ?? 'TecnoStock') ?> | TecnoStock</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/estilo.css" rel="stylesheet"> <!-- estilos propios -->
 </head>
 <body class="bg-light">
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="panel.php">TecnoStock</a>
+        <a class="navbar-brand fw-bold" href="panel.php">TecnoStock v1.0</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,14 +38,14 @@ $pagina = basename($_SERVER['PHP_SELF']); // para marcar el menú activo
                 </li>
             </ul>
             <span class="navbar-text text-white me-3">
-                <?= e($_SESSION['nombre']) ?>
+                Usuario: <?= e($_SESSION['nombre']) ?>
             </span>
             <a href="logout.php" class="btn btn-outline-light btn-sm">Cerrar sesión</a>
         </div>
     </div>
 </nav>
 
-<main class="container pb-5">
+<main class="container pb-4">
 
 <?php
 // Mensaje "flash": se guarda en la sesión antes de redirigir y se muestra una sola vez
